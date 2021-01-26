@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mahoa</title>
+    <link rel="shortcut icon" href="src/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <p id="site-name">mahoa.</p>
+      </header>
+      <main>
+        <h1 id="headline">Dead simple text encryption tool.</h1>
+        <p id="description">
+            This tool is completely free and fully open-source. All your input won't be logged. 
+        </p>
+        <div id="warning"></div>
+        <div id="result-div">
+            <div id="copy-div">
+                <img src="src/imgs/copy.svg" id="copy-icon" alt="">
+                <button id="copy-result">Copy</button>
+            </div>
+            <h3>Result</h3>
+            <p id="result"></p>
+        </div>
+        <div id="input-form">
+          <form action="">
+              <label for="algorithms">Algorithms</label>
+              <select name="Algorithms" id="algorithms"></select>
+              <label for="action">Action</label>
+              <div name="action" id="action">
+                  <button type="button" id="encrypt" class="active" action="encrypt">Encrypt</button>
+                  <button type="button" id="decrypt" action="decrypt">Decrypt</button>
+              </div>
+              <label for="passphrase">Passphrase</label>
+              <div id="passphrase-field">
+              <input type="password" name="Passphrase" class="input" id="passphrase" placeholder="Your secret passphrase">
+              <button type="button" id="toggle-passphrase"><img src="src/imgs/eye.svg" alt=""></button>
+              </div>
+              <label for="message">Your message</label>
+              <textarea name="Message" id="message" class="input" placeholder="Type your message here"></textarea>
+              <button name="SubmitBtn" type="button" id="submit-btn">Do it!</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <p>Made with <3 by Quang Thang</p>
+        <a href="//github.com"><img src="src/imgs/github.svg" id="github-icon" alt="Github"></a>
+        </footer>
+    </div>
+    <script src="src/js/crypto-js.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

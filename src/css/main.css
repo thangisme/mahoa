@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #111;
+    color: #f2f2f2;
+}
+#container {
+    margin: 2% 20%;
+}
+#site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+main {
+    margin: 3% 0;
+}
+#headline {
+    text-align: center;
+    font-size: 3rem;
+}
+#description {
+    font-size: 1.5rem;
+    text-align: center;
+}
+#warning {
+    border-radius: 5px;
+    background-color: tomato;
+    padding: 8px 15px;
+    display: none;
+    margin: 2% 0;
+}
+.active-warning {
+    display: block !important;
+}
+#result-div {
+    background-color: green;
+    border-radius: 5px;
+    display: none;
+    margin: 2% 0;
+    max-width: 100%;
+    padding: 10px 15px;
+}
+#result {
+    word-wrap: break-word;
+}
+#copy-div {
+    float: right;
+    display: flex;
+    justify-items: flex-end;
+}
+#copy-result {
+    border: none;
+    background: none;
+    color: #d8d7d7;
+    outline: none;
+}
+#copy-icon {
+    margin-right: 5px;
+    width: 1.2rem;
+}
+.active-result {
+    display: block !important;
+}
+#input-form {
+    width: 55%;
+    margin: 3% auto;
+}
+#input-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label {
+    font-size: 1.2rem;
+    margin: 1% 0;
+}
+#algorithms {
+    display: block;
+    background-color: rgba(32, 32, 32, 0.9);
+    height: 25px;
+    padding: 0 15px;
+    color: white;
+}
+#action {
+    border-radius: 5px;
+    background-color: rgba(62, 62, 62, 0.9);
+    display: flex;
+    margin: 2% 0;
+}
+#action button {
+    background-color: rgba(32, 32, 32, 0.9);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 2px;
+    flex: 1;
+    outline: none;
+}
+#action .active {
+    background-color: #000;
+    color: white;
+}
+.input {
+    display: block;
+    border: 1px solid #7e7d7d;
+    border-radius: 5px;
+    padding: 8px 20px;
+    width: 100%;
+    background-color: rgba(32, 32, 32, 0.9);
+    color: white;
+}
+#passphrase-field {
+    display: flex;
+    position: relative;
+}
+#toggle-passphrase {
+    position: absolute;
+    top: 6px;
+    right: 3%;
+    border: none;
+    outline: none;
+    background: none;
+}
+#toggle-passphrase img {
+    width: 1.3rem;
+}
+#message {
+    height: 30vh;
+    color: white;
+    background-color: rgba(32, 32, 32, 0.9);
+}
+.input:focus, #message:focus{
+    border: 1px solid white;
+}
+.input::placeholder {
+    color: #adadad;
+}
+footer {
+    text-align: center;
+    color: #adadad;
+}
+#github-icon {
+    margin-top : 10px;
+}
+#submit-btn {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(12, 12, 12, 0.8);
+    margin: 15px auto;
+    padding: 5px 25px;
+}
+@media screen and (max-width: 900px){
+    #container {
+        margin: 3% 5%;
+    }
+    #site-name {
+        font-size: 1.1rem;
+    }
+    #headline{
+        font-size: 2.2rem;
+    }
+    #description {
+        font-size: 1.5rem;
+    }
+    label {
+        font-size: 1.5rem;
+    }
+    #input-form {
+        width: 85%;
+    }
+}
