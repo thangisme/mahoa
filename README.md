@@ -3,8 +3,10 @@
 
 ## What is this?
 <img src="src/imgs/screenshot.png" width="100%">
+
 `mahoa` is a simple web app for encrypting and decrypting text using `CryptoJS`. It currently supports AES, DES and Triple DES.
 
+You can use it instantly [here](https://mahoa.now.sh)
 ## Is it safe?
 This is a client-side application. No information will be sent back to the server or stored in anyway.
 
